@@ -38,4 +38,4 @@ COPY main.py .
 # Define the command to run the application.
 # Use the PORT environment variable provided by Railway.
 # Listen on 0.0.0.0 to accept connections from outside the container.
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD uvicorn main:app --host 0.0.0.0 --port $PORT
